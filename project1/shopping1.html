@@ -13,12 +13,13 @@
 
     <style>
         /* 너비 설정, 정중앙 배치, 테두리 표시 */
-        #container { border: 1px solid red; width: 950px; margin: 0 auto; }
+        #container { border: 2px solid black; width: 950px; margin: 0 auto;}
 
         /* 높이 지정, 테두리 표시 */
         /* header 안의 ul, div를 적절히 배치하기 위해 */
         /* position: relative 선언 */
-        header { border: 1px solid darkred; position: relative; height: 100px; }
+        header { /* border: 1px solid darkred;*/
+            position: relative; height: 100px; }
 
         /* 글머리기호 제거, 여백/마진 0으로 설정 */
         /* header의 위치를 기준으로 ul 배치하기 위해 */
@@ -66,7 +67,7 @@
 
 
         /* 테두리 표시 */
-        main { border: 1px solid darkviolet; }
+        /* main { border: 1px solid darkviolet; } */
 
         #section1 { border: 1px solid white; position: relative; }
 
@@ -97,7 +98,7 @@
             width: 27px; height: 25px; text-align: center; }
 
         /* 상품목록 - 테두리 표시 */
-        #section2 div { border: 1px solid darkcyan; }
+        /* #section2 div { border: 1px solid darkcyan; } */
         #section2 div h2 { font-weight: normal; margin: 0 0 0 30px;
             font-size: 20px; }
 
@@ -111,6 +112,29 @@
         #section2 div ul img { width: 100px; height: 100px; background: #cccccc;
             border-radius: 10px; border: 1px solid #cccccc; }
         #section2 div ul a { display: block; text-align: center; }
+
+        /* 링크에 대한 스타일 지정 */
+        a:link { color: black; }
+        a:visited { color: black; }
+        a:hover { color: dodgerblue; }
+        a:active { color: navy; }
+
+
+        /* 꼬릿글 영역 경계선 표시 */
+        footer { /* border: 1px solid black; */ border-bottom: 1px solid white; }
+
+        /* 꼬릿글: 블록 요소 인라인 요소로 변경, 수직 정렬 지정 */
+        footer ul { list-style: none; display: inline-block;
+            vertical-align: top; }
+
+        /* 첫 번째 푸터 메뉴 마진 설정 */
+        /* 푸터 머릿글 마진 설정 */
+        footer ul:first-child { margin-left: 12px; }
+        footer ul li:first-child h3 { margin: 0; }
+
+        /* 꼬릿글 */
+        footer div { text-align: center; color: #cccccc; margin-top: 35px;
+        border-top: 2px solid black; padding: 7px; }
 
 
     </style>
@@ -184,15 +208,14 @@
                 <li>Policies</li>
                 <li>Contact</li>
             </ul>
-
             <ul>
                 <li><h3>SOCIAL</h3></li>
                 <li>Facebook</li>
                 <li>Twitter</li>
                 <li>Try our app</li>
             </ul>
-
-            <ul><li><h3>SERVICE</h3></li>
+            <ul>
+                <li><h3>SERVICE</h3></li>
                 <li>FAQ</li>
                 <li>Live support</li>
                 <li>Site map</li>
