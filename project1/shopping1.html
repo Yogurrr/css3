@@ -45,7 +45,7 @@
 
 
         /* 테두리, 높이 지정 */
-        nav { height: 35px; background: #cccccc; border: 1px solid darkgreen; }
+        nav { height: 35px; background: #cccccc; border: 1px solid #cccccc; }
 
         /* nav 공통 스타일 지정 */
         nav input, nav select, nav button { margin: 3px 0;
@@ -59,25 +59,58 @@
         nav select { text-decoration: underline; width: 160px;
             border: 1px solid black; padding: 2px; }
 
-        /* 배경, 글자색, 여백, 마진, ㅓㄴ비, 글꼴 크기, 테두시 모서리 지정 */
+        /* 배경, 글자색, 여백, 마진, 너비, 글꼴 크기, 테두시 모서리 지정 */
         nav button { background: #999999; border-radius: 7px;
             border: 1px solid #999999; color: white; width: 135px;
             font-size: 18px; padding: 2px; }
 
 
-        main { position: relative; }
+        /* 테두리 표시 */
+        main { border: 1px solid darkviolet; }
 
-        #section1 aside { position: absolute; top: 11px; left: 20px; }
+        #section1 { border: 1px solid white; position: relative; }
+
+        /* 사이드 메뉴 - 테두리, 너비 지정 */
+        #section1 aside { width: 25%; margin: 0 0 0 20px; }
+
+        /* ul의 테두리는 두껍게 표시 */
         #section1 aside ul { list-style: none; padding: 0;
             width: 170px; outline: 2px solid black; }
-        #section1 aside ul li { border: 1px solid black; padding: 2px; }
 
-        #section1 div { position: absolute; border: 3px solid black;
-            width: 720px; height: 200px; top: 25px; right: 20px; }
-        #section1 div p { text-align: center; }
-        #section1 div ul li { display: inline-block; text-align: right; }
+        /* ul의 li는 아래쪽 테두리만 그림, 여백 설정 */
+        #section1 aside li { border: 1px solid black; padding: 2px; }
 
-        #section2 { position: absolute; top: 210px; }
+        /* 로테이트 이미지 - 테두리, 너비, 배치 위치, 높이 지정 */
+        #section1 div { border: 3px solid black; position: absolute;
+            width: 76%; height: 85%; top: 15px; right: 20px; }
+
+        /* 로테이트 텍스트 - 배치 위치 지정 */
+        #section1 div p { position: absolute; top: 35%; left: 30%; }
+        #section1 div p:before { content: '[ ' }
+        #section1 div p:after { content: ' ]' }
+
+        /* 버튼들 - 버튼 배치 위치 지정 */
+        /* 버튼요소 - 버튼 배경색, 여백, 마진 지정 */
+        #section1 div ul { position: absolute; top: 150px; right: 20px;
+        list-style: none; }
+        #section1 div ul li { display: inline-block; background: #cccccc;
+            width: 27px; height: 25px; text-align: center; }
+
+        /* 상품목록 - 테두리 표시 */
+        #section2 div { border: 1px solid darkcyan; }
+        #section2 div h2 { font-weight: normal; margin: 0 0 0 30px;
+            font-size: 20px; }
+
+        /* 상품목록 배치 - 항목별로 왼쪽 마진 지정 */
+        #section2 div ul { list-style: none; }
+        #section2 div ul li { display: inline-block; margin-left: 4%;
+        margin-bottom: 2%; }
+
+        /* 상품 링크 - 이미지 크기, 배경 지정 */
+        /* 인라인 요소를 블록 요소로 변경 */
+        #section2 div ul img { width: 100px; height: 100px; background: #cccccc;
+            border-radius: 10px; border: 1px solid #cccccc; }
+        #section2 div ul a { display: block; text-align: center; }
 
 
     </style>
