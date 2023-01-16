@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Write</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/project2.css">
+
+    <style>
+        .write { margin: 100px 0 0 200px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header><h1>JSP 프로젝트 v1</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="list.html">게시판</a></li>
+                <li><a href="myinfo.html">회원정보</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>새글쓰기</h3>
+            <form class="write">
+                <table>
+                    <tr>
+                        <th style="width: 50px"><label for="title">제목</label></th>
+                        <td><input type="text" name="title" id="title"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="uid">작성자</label></th><td>
+                        <input type="text" name="uid" id="uid" value="yogurrr" readonly></td>
+                    </tr>
+                    <tr>
+                        <th><label for="contents">본문</label></th>
+                        <td>
+                            <textarea name="contents" id="contents" rows="7" cols="55">
+                            </textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label></label>
+                            <button type="button">입력완료</button>
+                            <button type="reset">다시입력</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </main>
+        <footer>
+            <p>copyright &copy; 2014. 2017. siestageek.
+                All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
