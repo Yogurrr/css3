@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>한국여행</title>
+    <meta name="keyword" content="한국 여행, 일본 여행, 동남아, 미국, 하와이">
+    <meta name="description" content="1등 여행 전문사이트">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <style>
+        #container { width: 1200px; margin: 0 auto; border: 1px solid red; }
+
+        header { background: #cccccc; height: 100px; color: darkolivegreen;}
+        header h1 { text-shadow: 3px 3px 0 darkgoldenrod; margin: 0 0 0 60px; }
+        /* 헤더와 마진 제거 */
+
+        nav > ul { float: right; width: 800px; background: black; color: white;
+            margin-top: -42px; margin-bottom: 0; }
+
+        nav > ul > li { display: inline-block; padding: 10px 68px;
+            font-weight: bold; }
+
+        nav > ul ul { display: none; }
+
+        .clearfix2:after { content: ""; display: block; clear: both; }
+
+        .rotateimg {  }
+        .none { display: none; }
+
+        a:link { color: white; text-decoration: none; font-weight: bold;
+            position: relative; }
+        a:visited { color: white; }
+        .rotateimg a span { background: rgba(100, 100, 100, 0.5);
+            padding: 5px 30px;
+            font-size: 20px; position: absolute; top: 0; left: 460px; }
+
+
+        #info { margin-left: 20px; width: 30%; float: left;}
+        #info h4 { font-size: 25px; margin-bottom: 0; }
+        #info table { padding: 10px 0; border-top: 2px solid orange;
+            margin-top: 10px;}
+        #info table tr:nth-child(even) { background: orange;}
+
+        #gal { float: left; width: 30%; }
+        #gal h4 { font-size: 25px; margin-bottom: 0; }
+        #gal ul { list-style: none; border-top: 2px solid orange;
+            margin-top: 10px; padding: 10px 0; }
+        #gal ul li { display: inline-block; margin: 5px 0 0 10px; }
+
+        .clear { clear: both; }
+
+        #click { float: left; border: 1px solid yellow; margin: 0;}
+
+        footer { height: 150px; border: 1px solid lightcoral; }
+        #copy { text-align: left; }
+        #family { text-align: right; }
+        #family ul { list-style: none; }
+        #family ul li { display: inline-block; margin: 0 10px; }
+        #family select {  }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header><h1>한국투어</h1></header>
+        <nav class="clearfix2">
+            <ul>
+                <li>해외여행
+                    <ul>
+                        <li>동남아/대만</li>
+                        <li>중국/홍콩</li>
+                        <li>유럽/두바이</li>
+                        <li>미주/하와이</li>
+                    </ul>
+                </li>
+                <li>국내여행
+                    <ul>
+                        <li>서울/경기</li>
+                        <li>강원</li>
+                        <li>충청</li>
+                        <li>경상/전라</li>
+                    </ul>
+                </li>
+                <li>제주도
+                    <ul>
+                        <li>버스여행</li>
+                        <li>자유여행</li>
+                        <li>호텔/펜션</li>
+                    </ul>
+                </li>
+                <li>렌터카
+                    <ul>
+                        <li>국내 렌터카</li>
+                        <li>국외 렌터카</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="rotateimg">
+                <div>
+                    <a href="#">
+                    <img src="img/Slides/img1.jpg">
+                    <span>국내여행의 대표, 한국투어</span></a>
+
+                    <a href="#" class="none">
+                    <img src="img/Slides/img2.jpg">
+                    <span>해외여행 예약, 한국투어</span></a>
+
+                    <a href="#" class="none">
+                    <img src="img/Slides/img3.jpg">
+                    <span>편리한 렌터카, 한국투어</span></a>
+                </div>
+            </section>
+            <section>
+                <div id="info">
+                    <h4>공지사항</h4>
+                    <table>
+                        <tr>
+                            <td>한국투어 홈페이지 개편 안내</td>
+                            <td>2022.03.01</td>
+                        </tr>
+                        <tr>
+                            <td>여행 이벤트 상품을 드립니다.</td>
+                            <td>2022.03.01</td>
+                        </tr>
+                        <tr>
+                            <td>렌트 이용 시 주의해주세요.</td>
+                            <td>2022.03.01</td>
+                        </tr>
+                        <tr>
+                            <td>제주도 여행권 할인 안내</td>
+                            <td>2022.03.01</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="gal">
+                    <h4>갤러리</h4>
+                    <ul>
+                        <li><img src="img/Contents/gallery1.jpg"></li>
+                        <li><img src="img/Contents/gallery2.jpg"></li>
+                        <li><img src="img/Contents/gallery3.jpg"></li>
+                    </ul>
+                </div>
+                <div id="click" class="clear">
+                    <a href="#">
+                        <img src="img/Contents/shortcut.jpg"><br>
+                        <span>바로가기</span></a>
+                </div>
+            </section>
+        </main>
+        <footer class="clear">
+            <div id="copy">Copyright &copy; by WEBDESIGN. ALL RIGHTS RESERVED</div>
+            <div id="family">
+                <ul>
+                    <li><img src="img/Footer/sns1.jpg"></li>
+                    <li><img src="img/Footer/sns2.jpg"></li>
+                    <li><img src="img/Footer/sns3.jpg"></li>
+                </ul>
+                <select name="sitelist">
+                    <option>패밀리사이트1</option>
+                    <option>패밀리사이트2</option>
+                    <option>패밀리사이트3</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
