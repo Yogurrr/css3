@@ -12,10 +12,14 @@
     <link rel="stylesheet" href="../css/main.css">
 
     <style>
+        h4 {
+            margin: 0;
+            font-size: 25px;
+        }
         #container { width: 1200px; margin: 0 auto; border: 1px solid red; }
 
         header { background: #cccccc; height: 100px; color: darkolivegreen;}
-        header h1 { text-shadow: 3px 3px 0 darkgoldenrod; margin: 0 0 0 60px; }
+        header h1 { text-shadow: 3px 3px 0 goldenrod; margin: 0 0 0 60px; }
         /* 헤더와 마진 제거 */
 
         nav > ul { float: right; width: 800px; background: black; color: white;
@@ -28,39 +32,74 @@
 
         .clearfix2:after { content: ""; display: block; clear: both; }
 
-        .rotateimg {  }
+        .rotateimg { }
         .none { display: none; }
 
         a:link { color: white; text-decoration: none; font-weight: bold;
             position: relative; }
         a:visited { color: white; }
         .rotateimg a span { background: rgba(100, 100, 100, 0.5);
-            padding: 5px 30px;
-            font-size: 20px; position: absolute; top: 0; left: 460px; }
+            padding: 5px 30px; font-size: 20px; position: absolute;
+            top: 0; left: 460px; }
 
+        section:last-child { height: 200px; }
 
-        #info { margin-left: 20px; width: 30%; float: left;}
-        #info h4 { font-size: 25px; margin-bottom: 0; }
-        #info table { padding: 10px 0; border-top: 2px solid orange;
-            margin-top: 10px;}
-        #info table tr:nth-child(even) { background: orange;}
+        main > section:nth-of-type(2) > div {
+            width: 370px;
+            float: left;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+        .notice table { padding: 10px 0; border-top: 2px solid orange;
+            margin-top: 10px; border-spacing: 0;
+            width: 100%; /* width: 370px; margin: 0 10px;
+            border-collapse: collapse; */ }
+        /* .notice td { padding: 5px 0; } */
+        /* .notice td:last-child { text-align: right } */
+        .notice table tr:nth-child(even) { background: orange;}
 
-        #gal { float: left; width: 30%; }
-        #gal h4 { font-size: 25px; margin-bottom: 0; }
-        #gal ul { list-style: none; border-top: 2px solid orange;
-            margin-top: 10px; padding: 10px 0; }
-        #gal ul li { display: inline-block; margin: 5px 0 0 10px; }
+        .gallery ul { list-style: none; border-top: 2px solid orange;
+            margin-top: 10px; padding: 10px 0; /* margin: 0;
+             padding: 0 0 0 10px; */ }
+        .gallery ul li { display: inline-block; margin: 5px 0 0 10px; }
 
-        .clear { clear: both; }
+        .golink {
+            position: relative;
+            background-image: url('img/Contents/shortcut.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 164px;
+        }
+        .golink img {
+            width: 0;
+            /* margin: 10px 0 10px -5px; */
+        }
+        .golink span {
+            background: rgba(100, 100, 100, 0.5);
+            width: 50%;
+            font-size: 24px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
 
-        #click { float: left; border: 1px solid yellow; margin: 0;}
+        footer { height: 100px; background: #cccccc }
+        .copy { width: 600px; text-align: center; float: left;
+            font-size: 20px; line-height: 100px; font-weight: bold; }
+        /* 수직정렬 할 때는 'line-height'로, 이를 담고 있는 곳과 높이 똑같이 */
 
-        footer { height: 150px; border: 1px solid lightcoral; }
-        #copy { text-align: left; }
-        #family { text-align: right; }
-        #family ul { list-style: none; }
-        #family ul li { display: inline-block; margin: 0 10px; }
-        #family select {  }
+        .sns_site { float: right; width: 250px; margin: 5px 15px 0 0; }
+        .sns { list-style: none; margin: 0 0 0 10px; padding: 0; }
+        .sns li { display: inline-block; padding: 5px 10px; }
+
+        .site { width: 250px; }
     </style>
 </head>
 <body>
@@ -99,7 +138,7 @@
                 </li>
             </ul>
         </nav>
-        <main>
+        <main class="clearfix2">
             <section class="rotateimg">
                 <div>
                     <a href="#">
@@ -115,8 +154,8 @@
                     <span>편리한 렌터카, 한국투어</span></a>
                 </div>
             </section>
-            <section>
-                <div id="info">
+            <section class="clearfix2">
+                <div class="notice">
                     <h4>공지사항</h4>
                     <table>
                         <tr>
@@ -137,7 +176,7 @@
                         </tr>
                     </table>
                 </div>
-                <div id="gal">
+                <div class="gallery">
                     <h4>갤러리</h4>
                     <ul>
                         <li><img src="img/Contents/gallery1.jpg"></li>
@@ -145,22 +184,21 @@
                         <li><img src="img/Contents/gallery3.jpg"></li>
                     </ul>
                 </div>
-                <div id="click" class="clear">
-                    <a href="#">
-                        <img src="img/Contents/shortcut.jpg"><br>
-                        <span>바로가기</span></a>
+                <div class="golink">
+                        <img src="img/Contents/shortcut.jpg">
+                        <span><a href="#">바로가기</a></span>
                 </div>
             </section>
         </main>
         <footer class="clear">
-            <div id="copy">Copyright &copy; by WEBDESIGN. ALL RIGHTS RESERVED</div>
-            <div id="family">
-                <ul>
+            <div class="copy">Copyright &copy; by WEBDESIGN. ALL RIGHTS RESERVED</div>
+            <div class="sns_site">
+                <ul class="sns">
                     <li><img src="img/Footer/sns1.jpg"></li>
                     <li><img src="img/Footer/sns2.jpg"></li>
                     <li><img src="img/Footer/sns3.jpg"></li>
                 </ul>
-                <select name="sitelist">
+                <select name="sitelist" class="site">
                     <option>패밀리사이트1</option>
                     <option>패밀리사이트2</option>
                     <option>패밀리사이트3</option>
