@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>View</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="widlabel=device-widlabel, initial-scale=1">
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -11,10 +11,12 @@
 
     <style>
         main h3 { margin-left: 30px; }
-        main table { margin: 70px auto; }
-        table tr th { padding-right: 10px; }
-        button { margin-top: 5px; }
-        button:first-child { margin-left: 60px; }
+        #view { width: 600px; margin: 0 auto; }
+        label { display: inline-block; width: 110px; text-align: right;
+            font-weight: bold; }
+        #contents { border: 1px solid #cccccc; display: inline-block;
+            width: 460px; min-height: 350px; }
+        #view div label { padding-right: 10px; }
     </style>
 </head>
 <body>
@@ -31,43 +33,37 @@
         </nav>
         <main>
             <h3>게시판 본문글</h3>
-            <table>
-                <tr>
-                    <th style="width: 50px">제&nbsp;&nbsp;목</th>
-                    <td>시간은 금이라구, 친구!! 진짜라구, 친구!!
-                    정말이라구, 친구!!</td>
-                </tr>
-                <tr>
-                    <th>작성자</th>
-                    <td>yogurrr</td>
-                </tr>
-                <tr>
-                    <th>작성일</th>
-                    <td>2023-01-11 09:44:05 (777)</td>
-                </tr>
-                <tr>
-                    <th>본&nbsp;&nbsp;문</th>
-                    <td style="outline: 1px solid black; width: 600px">
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
-                        </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="button" onclick="location.href='write.html'">
-                            새글쓰기</button>
-                        <button type="button">목록으로</button>
-                        <button type="button">수정하기</button>
-                        <button type="button">삭제하기</button>
-                    </td>
-                </tr>
-            </table>
+            <div id="view">
+                <div><label>제&nbsp;&nbsp;&nbsp;목</label>
+                <span>시간은 금이라구, 친구!! 진짜라구, 친구!!
+                    정말이라구, 친구!!</span></div>
+
+                <div><label>작성자</label>
+                <span>yogurrr</span></div>
+                
+                <div><label>작성일</label>
+                <span>2023-01-11 09:44:05 (777)</span></div>
+                
+                <div><label class="dragup">본&nbsp;&nbsp;&nbsp;문</label>
+                <span id="contents">
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                    시간은 금이라구, 친구!! 진짜라구, 친구!! 정말이라구, 친구!!
+                </span></div>
+               
+                <div><label></label>
+                    <button type="button" onclick="location.href='write.html'">
+                        새글쓰기</button>
+                    <button type="button">목록으로</button>
+                    <button type="button">수정하기</button>
+                    <button type="button">삭제하기</button>
+                </div>
+            </div>
         </main>
         <footer>
             <p>copyright &copy; 2014. 2017. siestageek.
