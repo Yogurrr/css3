@@ -147,8 +147,9 @@ a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> <br>
 * LaTeX 형식의 수학식 표기법을 지원
 * 수식을 작성하려면 $ $ 기호를 사용
 * 자세한 LaTeX 문법은 https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95 를 참고
+* 온라인에서 간단히 LaTeX 문법을 확인하고 싶다면 https://editor.codecogs.com 을 참고
 
 ---
 $a^2 = b^2 + c^2$ <br>
 
-근의 공식: $$$frac{-b $mp $sqrt{b^2 -4ac}}{2a}$$
+근의 공식: $$\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$$
