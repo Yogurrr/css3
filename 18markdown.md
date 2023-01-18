@@ -150,4 +150,5 @@ a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> <br>
 
 ---
 $a^2 = b^2 + c^2$ <br>
-근의 공식: $$frac{-b mp sqrt{b^2 -4ac}}{2a}$$
+
+근의 공식: $$$frac{-b $mp $sqrt{b^2 -4ac}}{2a}$$
